@@ -1,69 +1,414 @@
-<head><!-- Meta Pixel Code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Get Started</title>
+
+<!-- =========================
+     META PIXEL CODE
+========================= -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1621486155648199');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1621486155648199&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code --></head>
 
+<noscript>
+<img height="1"
+     width="1"
+     style="display:none"
+     src="https://www.facebook.com/tr?id=1621486155648199&ev=PageView&noscript=1"/>
+</noscript>
 
-<div class="premium-cta">
-  <a href="https://galikalyanmatka.com" class="cta-button">
-    <span class="cta-main">GET INSTANT ACCESS</span>
-    <span class="cta-sub">Tap here to continue →</span>
-  </a>
-</div>
+<!-- End Meta Pixel Code -->
+
 
 <style>
-.premium-cta {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   PREMIUM CTA SECTION
+========================= */
+
+.premium-interface {
   width: 100%;
+  padding: 35px 14px;
   display: flex;
   justify-content: center;
-  padding: 18px 0;
 }
 
-.cta-button {
-  width: calc(100% - 32px);
-  max-width: 390px;
-  padding: 17px 20px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #fff;
-  text-decoration: none;
+.premium-card {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 30px 22px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e9ed;
+  border-radius: 20px;
+
   text-align: center;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-  box-shadow: 0 10px 30px rgba(0,0,0,.18);
-  transition: all .25s ease;
+
+  box-shadow:
+    0 18px 50px rgba(15,23,42,.08),
+    0 3px 10px rgba(15,23,42,.04);
 }
 
-.cta-main {
-  display: block;
-  font-size: 17px;
+
+/* =========================
+   STATUS BADGE
+========================= */
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 7px 12px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #dcfce7;
+
+  border-radius: 50px;
+
+  color: #166534;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .8px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 4px rgba(34,197,94,.10);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.premium-card h2 {
+  margin: 16px 0 7px;
+
+  color: #111827;
+
+  font-size: 25px;
+  line-height: 32px;
+
   font-weight: 800;
+
+  letter-spacing: -.5px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.card-description {
+  max-width: 310px;
+
+  margin: 0 auto 23px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+/* =========================
+   PRIMARY CTA
+========================= */
+
+.primary-cta {
+  width: 100%;
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 0 20px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 800;
+
   letter-spacing: .5px;
+
+  box-shadow:
+    0 9px 22px rgba(17,24,39,.20);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
 }
 
-.cta-sub {
-  display: block;
-  margin-top: 5px;
-  font-size: 12px;
-  font-weight: 400;
-  opacity: .75;
-}
+.primary-cta:hover {
+  background: #1f2937;
 
-.cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 35px rgba(0,0,0,.25);
+
+  box-shadow:
+    0 13px 28px rgba(17,24,39,.25);
+}
+
+.cta-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,.11);
+
+  border-radius: 50%;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   SECONDARY CTA
+========================= */
+
+.secondary-cta {
+  width: 100%;
+  min-height: 48px;
+
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  background: #f8fafc;
+
+  color: #1f2937;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 11px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: all .2s ease;
+}
+
+.secondary-cta:hover {
+  background: #f1f5f9;
+
+  border-color: #d1d5db;
+}
+
+.secondary-arrow {
+  font-size: 17px;
+}
+
+
+/* =========================
+   TRUST LINE
+========================= */
+
+.secure-line {
+  margin-top: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: #8b929d;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.secure-check {
+  color: #16a34a;
+  font-weight: 800;
+}
+
+.secure-divider {
+  width: 3px;
+  height: 3px;
+
+  background: #cbd0d6;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .premium-interface {
+    padding: 23px 12px;
+  }
+
+  .premium-card {
+    padding: 25px 17px 19px;
+
+    border-radius: 18px;
+  }
+
+  .premium-card h2 {
+    font-size: 23px;
+  }
+
+  .primary-cta {
+    min-height: 58px;
+  }
+
+  .secondary-cta {
+    min-height: 48px;
+  }
 }
 </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     PREMIUM CTA INTERFACE
+========================= -->
+
+<section class="premium-interface">
+
+  <div class="premium-card">
+
+    <div class="card-badge">
+      <span class="status-dot"></span>
+      AVAILABLE NOW
+    </div>
+
+
+    <h2>Get Started Today</h2>
+
+
+    <p class="card-description">
+      Access everything instantly with one simple click.
+    </p>
+
+
+    <!-- CTA 1 -->
+    <a
+      href="https://galikalyanmatka.com"
+      class="primary-cta"
+      onclick="trackSubscribe('download_now')"
+    >
+      <span>DOWNLOAD NOW</span>
+      <span class="cta-icon">↓</span>
+    </a>
+
+
+    <!-- CTA 2 -->
+    <a
+      href="https://galikalyanmatka.com"
+      class="secondary-cta"
+      onclick="trackSubscribe('continue')"
+    >
+      <span>CONTINUE</span>
+      <span class="secondary-arrow">→</span>
+    </a>
+
+
+    <div class="secure-line">
+      <span class="secure-check">✓</span>
+      Fast &amp; Secure Access
+
+      <span class="secure-divider"></span>
+
+      Mobile Friendly
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SUBSCRIBE EVENT
+========================= -->
+
+<script>
+
+function trackSubscribe(buttonName) {
+
+  if (typeof fbq === 'function') {
+
+    fbq('track', 'Subscribe', {
+      content_name: 'Premium Access',
+      content_category: 'CTA',
+      button_name: buttonName
+    });
+
+  }
+
+}
+
+</script>
+
+
+</body>
+</html>
